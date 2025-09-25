@@ -1,0 +1,86 @@
+About Project:
+
+Project Name: Student Database Management System in C.
+Author: Yogeshwar Prakash Chaudhari.
+File Name: Student.c
+
+////////////////////////////////////////////////////////////////////////
+//
+// Project Description:
+//
+////////////////////////////////////////////////////////////////////////
+
+1) Introduction
+
+The Student Database Management System is a simple console-based project developed in C language.
+It allows users (like teachers, administrators, or students) to store, view, search, and delete student information efficiently using file handling.
+Instead of relying on traditional registers or spreadsheets, this system keeps student records in a structured binary file (student_info.txt).
+
+2) Objectives
+
+To provide a basic system for managing student information.
+To learn and implement C structures, file handling, and menu-driven programming.
+To simulate a real-world student database with add, view, search, and delete operations.
+
+3) Features Implemented
+
+  Add Student Record:
+    Collects details like name, roll number, class, address, and percentage.
+    Stores them in a binary file (student_info.txt).
+    Multiple records can be added one after another.
+
+  View Student Records:
+    Reads all student data from the file.
+    Displays records in a formatted output (Name, Roll Number, Class, Address, Percentage).
+
+  Search Student Record:
+    Searches a student by roll number.
+    Displays the matching student details if found.
+    Notifies if the record is not available.
+
+  Delete Student Record:
+    Removes a student record by roll number.
+    Creates a temporary file (temp.txt), copies all records except the one to be deleted.
+    Replaces the original file with the updated one.
+    Ensures database consistency.
+
+  Exit:
+    Closes the program gracefully.
+
+4) Technologies / Concepts Used
+
+C Programming Language
+
+Structures (struct student) for grouping student attributes.
+
+File Handling:
+fopen(), fclose()
+fread(), fwrite()
+remove(), rename()
+
+Binary File Storage for structured record-keeping.
+
+Menu-Driven Programming using switch-case.
+
+Looping and Conditional Constructs (while, if-else, do-while).
+
+5) Limitations
+
+Data stored in a binary file → not human-readable in editors like Notepad.
+No update/modify feature for existing records.
+No sorting (records are displayed in the order they were entered).
+Limited to command-line interface (CLI) – no graphical UI.
+
+5) Possible Future Enhancements
+
+Add Update Student Record functionality.
+Implement sorting (e.g., by roll number, name, or percentage).
+Allow export/import to CSV or text format for readability.
+Add login authentication for secure access.
+Build a GUI version using C++/Qt or C with GTK.
+Move to database systems (MySQL, SQLite) for large-scale use.
+
+6) Conclusion
+
+This Student Database Management System is a beginner-friendly project that demonstrates how to manage structured data using C programming and file handling.
+It provides essential database operations (CRUD → Create, Read, Update, Delete, except update here).
